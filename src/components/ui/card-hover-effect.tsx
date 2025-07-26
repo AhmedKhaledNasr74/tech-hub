@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { useRef, useState } from "react";
@@ -55,7 +56,7 @@ export const HoverEffect = ({
         <div
             ref={containerRef}
             className={cn(
-                "relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-3 items-stretch",
+                "relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 sm:py-10 gap-3 items-stretch px-4 sm:px-6",
                 className
             )}
             style={{ position: "relative" }}
@@ -99,8 +100,7 @@ export const HoverEffect = ({
                     onMouseEnter={() => handleMouseEnter(idx)}
                     onMouseLeave={handleMouseLeave}
                     initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.2 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: [0.4, 0.0, 0.2, 1] }}
                 >
                     <div className="relative z-10 h-full w-full">
@@ -108,7 +108,7 @@ export const HoverEffect = ({
                             <div className={`absolute inset-0`} />
                             <CardHeader className="relative z-10">
                                 <div
-                                    className={`w-12 h-12 rounded-lg mb-4 flex items-center text-white justify-center bg-gradient-to-r ${item.color}`}
+                                    className={`w-12 h-12  rounded-lg mb-4 flex items-center text-white justify-center bg-gradient-to-r ${item.color}`}
                                 >
                                     {item.icon}
                                 </div>

@@ -39,7 +39,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
+                className="flex flex-col sm:flex-row gap-4 justify-center mt-8 mx-auto w-1/2"
             >
                 <Button
                     size="lg"
