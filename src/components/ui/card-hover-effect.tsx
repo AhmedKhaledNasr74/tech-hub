@@ -56,7 +56,7 @@ export const HoverEffect = ({
         <div
             ref={containerRef}
             className={cn(
-                "relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 sm:py-10 gap-3 items-stretch px-4 sm:px-6",
+                "relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 sm:py-10 gap-5 items-stretch ",
                 className
             )}
             style={{ position: "relative" }}

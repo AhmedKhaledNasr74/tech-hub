@@ -17,8 +17,7 @@ const sections = [
         title: "Growing Every Day",
         desc: "Join thousands of developers who trust Tech Hub for their learning journey. Our community continues to grow and contribute quality resources daily.",
         component: <Numbers />,
-        className:
-            "text-center mb-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ",
+        className: "text-center mb-16 h-full ",
     },
 
     {
